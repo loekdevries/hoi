@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 80%; 
+            margin-bottom: 0px;
+        }
+        .small-photo {
+            width: 100%; 
+        }
+        .large-photo {
+            position: relative;
+            display: inline-block;
+            width: 100%; 
+            
+        }
+        .smallest-photo {
+            position: absolute;
+            width: 25%;
+           margin-left: 1600px;
+           margin-top: 500px;
+        }
+        .text{
+      position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5); /* Donkere achtergrond voor leesbaarheid */
+            padding: 10px;
+        }
+        .large-photo-container {
+            position: relative;
+            display: inline-block;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <img src="menubalk.jpg" alt="Kleine foto bovenaan" class="small-photo">
+    <img src="logo.png" alt="kleinste foto rechts boven" class="smallest-photo">
+    <img src="slider-hvc-hvc.jpeg" alt="Grote foto onderaan" class="large-photo" alt="Achtergrondfoto">
+    <div class="tekst">samen morgen maken</div>
+</body>
+</html>
