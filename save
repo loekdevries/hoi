@@ -12,7 +12,7 @@
             font-family: Arial, sans-serif;
         }
         .small-photo-top {
-            width: 100%;
+            width: 80%;
             margin-bottom: 20px;
         }
         .large-photo-container {
@@ -29,14 +29,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            font-size: 2em;
-            font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 60px;
+          
             padding: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0,0.7); 
+            
+        }
+        .light {
+            font-weight: 100;
         }
         .small-photo-inside {
             position: absolute;
-            bottom: 500px;
+            bottom: 700px;
             right: 10px;
             width: 20%;
         }
@@ -48,8 +52,8 @@
     
     <!-- Grote foto met tekst en kleine foto binnenin -->
     <div class="large-photo-container">
-        <img src="slider-hvc-hvc.jpeg" alt="Grote foto" class="large-photo">
-        <div class="text-overlay">Samen morgen maken</div>
+        <img src="slider-hvc-hvc.webp" alt="Grote foto" class="large-photo">
+        <p><div class="text-overlay"><strong>Samen</strong><span class="light"> morgen maken </span></div></p>
         <img src="logo.png" alt="Kleine foto binnen de grote foto" class="small-photo-inside">
     </div>
 </body>
