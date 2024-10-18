@@ -6,14 +6,13 @@
     <title>Foto's met Tekst en Afbeelding</title>
     <style>
         body {
-            text-align: center;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
         .small-photo-top {
-            width: 80%;
-            margin-bottom: 20px;
+            margin-left: 250px;
+           height: 150px;
         }
         .large-photo-container {
             position: relative;
@@ -41,11 +40,78 @@
             right: 10px;
             width: 20%;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Navigatiebalk links uitlijnen */
+        .navbar a {
+            float: middle;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Hover-effect voor links in de navigatiebalk */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown-knop */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown-inhoud (verstopt standaard) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links in de dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Hover effect voor de dropdown links */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Toon de dropdown inhoud bij hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <!-- Kleine foto bovenaan -->
-    <img src="menubalk.jpg" alt="Kleine foto bovenaan" class="small-photo-top">
+    <img src="Knipsel.PNG" alt="Kleine foto bovenaan" class="small-photo-top">
     
     <!-- Grote foto met tekst en kleine foto binnenin -->
     <div class="large-photo-container">
@@ -53,5 +119,18 @@
         <p><div class="text-overlay"><strong>Samen</strong><span class="light"> morgen maken </span></div></p>
         <img src="logo.png" alt="Kleine foto binnen de grote foto" class="small-photo-inside">
     </div>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Menu 
+            <i class="arrow down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+          </div>
+        </div> 
+      </div>
 </body>
 </html>
