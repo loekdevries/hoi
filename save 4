@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto's met Tekst en Afbeelding</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .small-photo-top {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .large-photo-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .large-photo {
+            width: 100%;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 60px;
+          
+            padding: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0,0.7); 
+            
+        }
+        .small-photo-inside {
+            position: absolute;
+            bottom: 700px;
+            right: 10px;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Kleine foto bovenaan -->
+    <img src="menubalk.jpg" alt="Kleine foto bovenaan" class="small-photo-top">
+    
+    <!-- Grote foto met tekst en kleine foto binnenin -->
+    <div class="large-photo-container">
+        <img src="slider-hvc-hvc.webp" alt="Grote foto" class="large-photo">
+        <p><div class="text-overlay"><strong>Samen</strong><span class="light"> morgen maken </span></div></p>
+        <img src="logo.png" alt="Kleine foto binnen de grote foto" class="small-photo-inside">
+    </div>
+</body>
+</html>
 
