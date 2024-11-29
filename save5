@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto's met Tekst en Afbeelding</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .large-photo-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .large-photo {
+            width: 100%;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 60px;
+            padding: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0,0.7); 
+        }
+        .small-photo-inside {
+            position: absolute;
+            bottom: 700px;
+            right: 10px;
+            width: 20%;
+        }
+        nav {
+    background-color: #f1f1f1; /* Optioneel, geeft een achtergrondkleur */
+    padding: 10px 0;
+}
+.nav-container {
+    display: flex;
+    align-items: center; /* Zorgt dat de foto en de menubalk uitgelijnd zijn */
+    justify-content: center; /* Centert de menubalk en foto */
+}
+.nav-logo {
+    width: auto;
+    height: 125px; /* Pas de grootte van de foto aan */
+    margin-right: 15px; /* Ruimte tussen de foto en menubalk */
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li {
+    position: relative;
+    margin: 0 15px; /* Ruimte tussen menu-items */
+}
+.menu a {
+    color: rgb(22, 7, 109);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.menu a:hover {
+    color: rgb(2, 160, 160);
+}
+.caret {
+    font-size: 1em;
+    margin-left: 5px;
+    transform: translateY(1px);
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.submenu li a {
+    padding: 12px 20px;
+    color: rgb(22, 7, 109);
+    text-decoration: none;
+    display: block;
+}
+.submenu li a:hover {
+    color: rgb(2, 160, 160);
+}
+.menu > li:hover .submenu {
+    display: block;
+}
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1; /* Optioneel, zorgt voor een achtergrond */
+            padding: 10px 0; /* Optioneel, voegt ruimte boven en onder toe */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigatie met submenu -->
+    <nav>
+        <div class="nav-container">
+            <img src="logo.svg" alt="Logo" class="nav-logo">
+            <ul class="menu">
+                <li>
+                    <a href="Untitled-1.html">Leerlingen & ouders <span class="caret">&#8744;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Lestijden en toetsweken</a></li>
+                        <li><a href="#">Schoolvakanties en lesvrije dagen </a></li>
+                        <li><a href="#">Rooster, magister en wifi</a></li>
+                        <li><a href="#">Raport & bevoreringsnormen</a></li>
+                        <li><a href="#">Examens</a></li>
+                        <li><a href="#">Afspraken</a></li>
+                        <li><a href="#">Schoolkosten</a></li>
+                        <li><a href="#">Nieuwsbrieven</a></li>
+                        <li><a href="#">GSA</a></li>
+                        <li><a href="#">Meepraten</a></li>
+                        <li><a href="#">Aanmelden</a></li>
+                        <li><a href="#">Absentie doorgeven</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Untitled-1.html">Onze school <span class="caret">&#8744;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Missie en Visie</a></li>
+                        <li><a href="#">Ons team</a></li>
+                        <li><a href="#">Bestuur</a></li>
+                        <li><a href="#">Onderwijskwaliteit</a></li>
+                        <li><a href="#">Lessentabellen en vakken</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Protocollen & regelingen</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Werken bij HVC</a></li>
+                        <li><a href="#">Contactgegevens</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Untitled-1.html">Ondersteuning <span class="caret">&#8744;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Coördinator Leerlingondersteuning</a></li>
+                        <li><a href="#">Begeleider Passend Onderwijs</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Untitled-1.html">Actueel <span class="caret">&#8744;</span></a>
+                    <ul class="submenu">
+                        <!-- Voeg hier submenu items toe -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Grote foto met tekst en kleine foto binnenin -->
+    <div class="large-photo-container">
+        <img src="slider-hvc-hvc.webp" alt="Grote foto" class="large-photo">
+        <p><div class="text-overlay"><strong>Samen</strong><span class="light"> morgen maken </span></div></p>
+        <img src="logo.png" alt="Kleine foto binnen de grote foto" class="small-photo-inside">
+    </div>
+</body>
+</html>
